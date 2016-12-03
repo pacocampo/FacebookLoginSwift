@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		553027FB1DF34BF000185791 /* facebook-demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "facebook-demo.entitlements"; sourceTree = "<group>"; };
 		55D11FEE1DD3CE1600F4B33F /* facebook-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "facebook-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D11FF11DD3CE1600F4B33F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55D11FF31DD3CE1600F4B33F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +110,7 @@
 		55D11FF01DD3CE1600F4B33F /* facebook-demo */ = {
 			isa = PBXGroup;
 			children = (
+				553027FB1DF34BF000185791 /* facebook-demo.entitlements */,
 				55D1201F1DD3CE2100F4B33F /* Framework */,
 				55D11FF11DD3CE1600F4B33F /* AppDelegate.swift */,
 				55D11FF31DD3CE1600F4B33F /* ViewController.swift */,
@@ -219,6 +221,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZBZT2VLJ7L;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					55D120011DD3CE1600F4B33F = {
 						CreatedOnToolsVersion = 8.0;
@@ -435,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "facebook-demo/facebook-demo.entitlements";
 				DEVELOPMENT_TEAM = ZBZT2VLJ7L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "facebook-demo/facebook-demo.entitlements";
 				DEVELOPMENT_TEAM = ZBZT2VLJ7L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,6 +547,7 @@
 				55D120181DD3CE1600F4B33F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55D120191DD3CE1600F4B33F /* Build configuration list for PBXNativeTarget "facebook-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +556,7 @@
 				55D1201B1DD3CE1600F4B33F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55D1201C1DD3CE1600F4B33F /* Build configuration list for PBXNativeTarget "facebook-demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +565,7 @@
 				55D1201E1DD3CE1600F4B33F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
